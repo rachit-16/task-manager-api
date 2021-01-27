@@ -103,6 +103,7 @@ test('Should update valid user fields', async () => {
     
         const user = await User.findById(_id1)
         expect(user.name).toEqual('Bhuvesh')
+        expect(user.email).toEqual('tester@example.com')
 })
 
 test('Should not update invalid user fields', async () => {
